@@ -17,7 +17,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
-  <body>
+  <body class="{{page.page-template}}">
+    <!-- ==================== Header ==================== -->
+    <header id="my-site-header">
+      <div class="vertical">
+          <div id="site-head-content">
+              <div class="blog-title-wrap">
+                  <div class="inner">
+                          <h1 class="blog-title"><a class="nav" href="{{site.url}}">{{site.name}}</a></h1>
+                          <h1 class="blog-nav">
+                          <a class="nav" href="{{site.url}}/about.html">About</a></h1>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <!-- ==================== footer ==================== -->
     <!--
       <div id="header">
         <nav>
