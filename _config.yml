@@ -1,6 +1,5 @@
 theme: jekyll-theme-midnight
 title: Welcome to Muhammed Ahad's homepage
-exclude: ["README.md"] # files to exclude
 description: Feel free to bookmark this to keep eye on projects
 author: Muhammed Ahad
 authorurl: https://github.com/ahad3112/
