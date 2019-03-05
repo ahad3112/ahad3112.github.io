@@ -4,7 +4,19 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- ==================== Adsense ==================== -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -19,14 +31,12 @@
 
   <!-- ==================== Body ==================== -->
   <body>
+    <h1>{{ page.title }}</h1>
     <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
+      <a href="{{site.url}}/index.html">Home</a>&nbsp;&nbsp;
+      <a href="">Blog</a>&nbsp;&nbsp;
       <a href="{{site.url}}/about.html">About</a>
     </nav>
-
-    <h1>{{ page.title }}</h1>
-
     <!-- ==================== Content ==================== -->
     <section>
       {{ content }}
@@ -34,7 +44,8 @@
 
     <!-- ==================== Footer ==================== -->
     <footer>
-      &copy; Muhammed Ahad
+      <section> &copy; 2019 <a href="{{site.authorurl}}">{{site.author}}</a>. Hosted by <a href="{{site.url}}">Github</a>.
+      </section>
     </footer>
   </body>
 </html>
