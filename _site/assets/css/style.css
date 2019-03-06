@@ -780,3 +780,32 @@ section {
 
   nav {
     display: none; } }
+/* ========================= hr ========================== */
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #FFFF00;
+  height: 3px; }
+
+/* ==================== Flex Container ==================== */
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+/* ==================== Flex Item - Header ==================== */
+.flex-header-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-header-item .flex-header-item-nav {
+  margin: 0px 0px 0px 60px; }
+
+.flex-header-item .flex-header-item-title {
+  margin: 0px 60px 0px 0px; }

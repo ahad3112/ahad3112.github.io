@@ -30,22 +30,35 @@
 
 
   <!-- ==================== Body ==================== -->
-  <body>
-    <h1>{{ page.title }}</h1>
-    <nav>
-      <a href="{{site.url}}/index.html">Home</a>&nbsp;&nbsp;
-      <a href="">Blog</a>&nbsp;&nbsp;
-      <a href="{{site.url}}/about.html">About</a>
-    </nav>
-    <!-- ==================== Content ==================== -->
-    <section>
-      {{ content }}
-    </section>
+  <body class="my-body">
+    <div class="flex-container">
+      <!-- ==================== Header ==================== -->
+      <div class="flex-header-item">
 
-    <!-- ==================== Footer ==================== -->
-    <footer>
-      <section> &copy; 2019 <a href="{{site.authorurl}}">{{site.author}}</a>. Hosted by <a href="{{site.url}}">Github</a>.
-      </section>
-    </footer>
+        <div class="flex-header-item-title">
+          <h1>{{ page.title }}</h1>
+        </div>
+
+        <div class="flex-header-item-nav">
+          <nav>
+            <a href="{{site.url}}/index.html">Home</a>&nbsp;&nbsp;
+            <a href="">Blog</a>&nbsp;&nbsp;
+            <a href="{{site.url}}/about.html">About</a>
+          </nav>
+        </div>
+
+      </div>
+      <hr>
+      <!-- ==================== Center ==================== -->
+      <div class="flex-center-item">
+        {{ content }}
+      </div>
+      <hr>
+      <!-- ==================== Footer ==================== -->
+      <div class="flex-footer-item">
+        <section> &copy; 2019 <a href="{{site.authorurl}}">{{site.author}}</a>. Hosted by <a href="{{site.url}}">Github</a>.
+        </section>
+      </div>
+    </div>
   </body>
 </html>
