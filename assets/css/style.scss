@@ -3,36 +3,92 @@
 
 @import "{{ site.theme }}";
 
+
 /* ========================= hr ========================== */
 hr {
   border: 0;
   clear:both;
   display:block;
-  width: 96%;
+  width: 80%;
   background-color:#FFFF00;
   height: 3px;
+}
+
+html, .my-body, .flex-container{
+  height: 100%;
 }
 
 /* ==================== Flex Container ==================== */
 .flex-container {
   display: flex;
-  width: 100%;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* ==================== Flex Item - Header ==================== */
-.flex-header-item {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+.flex-container .flex-header-item {
+  width: 80%;
+  // height: 15%;
+  flex-grow: 1;
+  // background-color: red;
 }
 
+.flex-container .flex-center-item {
+  width: 80%;
+  // height: 70%;
+  flex-grow: 8;
+  // background-color: blue;
+}
+.flex-container .flex-footer-item {
+  // height: 15%;
+  flex-grow: 1;
+  // background-color: green;
+}
+
+/* ==================== Flex Item - Header ==================== */
+
+.flex-header-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/*
 .flex-header-item .flex-header-item-nav {
   margin: 0px 0px 0px 60px;
 }
 .flex-header-item .flex-header-item-title {
   margin: 0px 60px 0px 0px;
+}*/
+
+/* ==================== Flex Item - Center ==================== */
+
+.flex-center-item {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ==================== Flex Item - Home of Container (flex-center-item) ==================== */
+.flex-center-item .home-left {
+  // flex-grow: 1;
+  width: 15%;
+  margin: 0px 10px 0px 0px;
+  text-align: justify;
+  // border-right: 1px inset;
+}
+
+.flex-center-item .home-center {
+  // flex-grow: 1;
+  width: 70%;
+  margin: 0px 10px 0px 10px;
+}
+
+.flex-center-item .home-right {
+ // flex-grow: 1;
+ width: 15%;
+ margin: 0px 0px 0px 10px;
+ // border-left: 1px inset;
+ text-align: justify;
 }
