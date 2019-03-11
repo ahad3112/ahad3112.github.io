@@ -790,7 +790,7 @@ hr {
   height: 3px; }
 
 html, .my-body, .flex-container {
-  height: 100%; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 /* ==================== Flex Container ==================== */
 .flex-container {
@@ -801,23 +801,37 @@ html, .my-body, .flex-container {
 
 .flex-container .flex-header-item {
   width: 96%;
-  flex-basis: 40px;
-  flex-grow: 0;
-  background-color: red; }
+  flex-basis: 60px;
+  flex: 0 0 auto;
+  background-color: green; }
 
 .flex-container .flex-center-item {
   width: 96%;
-  flex-grow: 1;
-  background-color: blue;
-  overflow-x: auto; }
+  flex: 1 0 auto;
+  background-color: darkgray;
+  margin: 10px 0px 10px 0px; }
 
 .flex-container .flex-footer-item {
-  flex-grow: 0;
+  fflex: 0 0 auto;
   flex-basis: 20px;
-  background-color: green; }
+  background-color: green;
+  padding: 0px 4px 0px 4px; }
 
 /* ==================== Flex Item - Header ==================== */
 .flex-container .flex-header-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-header-item .flex-header-item-nav {
+  margin: 0px 20px 0px 0px; }
+
+.flex-header-item .flex-header-item-title {
+  margin: 0px 0px 0px 20px; }
+
+/* ==================== about-content ==================== */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
