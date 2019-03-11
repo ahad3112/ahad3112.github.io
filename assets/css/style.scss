@@ -9,7 +9,7 @@ hr {
   border: 0;
   clear:both;
   display:block;
-  width: 80%;
+  width: 96%;
   background-color:#FFFF00;
   height: 3px;
 }
@@ -22,73 +22,72 @@ html, .my-body, .flex-container{
 .flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .flex-container .flex-header-item {
-  width: 80%;
-  // height: 15%;
-  flex-grow: 1;
-  // background-color: red;
+  width: 96%;
+  flex-basis: 40px;
+  flex-grow: 0;
+  background-color: red;
 }
 
 .flex-container .flex-center-item {
-  width: 80%;
-  // height: 70%;
-  flex-grow: 8;
-  // background-color: blue;
+  width: 96%;
+  flex-grow: 1;
+  background-color: blue;
+  overflow-x: auto;
 }
 .flex-container .flex-footer-item {
-  // height: 15%;
-  flex-grow: 1;
-  // background-color: green;
+  flex-grow: 0;
+  flex-basis: 20px;
+  background-color: green;
 }
 
 /* ==================== Flex Item - Header ==================== */
 
-.flex-header-item {
+.flex-container .flex-header-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
 }
-
-/*
-.flex-header-item .flex-header-item-nav {
-  margin: 0px 0px 0px 60px;
-}
-.flex-header-item .flex-header-item-title {
-  margin: 0px 60px 0px 0px;
-}*/
-
-/* ==================== Flex Item - Center ==================== */
-
-.flex-center-item {
-  display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
-  align-items: flex-start;
-}
-
-/* ==================== Flex Item - Home of Container (flex-center-item) ==================== */
-.flex-center-item .home-left {
-  // flex-grow: 1;
-  width: 15%;
-  margin: 0px 10px 0px 0px;
-  text-align: justify;
-  // border-right: 1px inset;
-}
-
-.flex-center-item .home-center {
-  // flex-grow: 1;
-  width: 70%;
-  margin: 0px 10px 0px 10px;
-}
-
-.flex-center-item .home-right {
- // flex-grow: 1;
- width: 15%;
- margin: 0px 0px 0px 10px;
- // border-left: 1px inset;
- text-align: justify;
-}
+//
+// /*
+// .flex-header-item .flex-header-item-nav {
+//   margin: 0px 0px 0px 60px;
+// }
+// .flex-header-item .flex-header-item-title {
+//   margin: 0px 60px 0px 0px;
+// }*/
+//
+// /* ==================== Flex Item - Center ==================== */
+//
+// .flex-center-item {
+//   display: flex;
+//   flex-direction: row;
+//   // justify-content: space-between;
+//   align-items: flex-start;
+// }
+//
+// /* ==================== Flex Item - Home of Container (flex-center-item) ==================== */
+// .flex-center-item .home-left {
+//   // flex-grow: 1;
+//   width: 15%;
+//   margin: 0px 10px 0px 0px;
+//   text-align: justify;
+//   // border-right: 1px inset;
+// }
+//
+// .flex-center-item .home-center {
+//   // flex-grow: 1;
+//   width: 70%;
+//   margin: 0px 10px 0px 10px;
+// }
+//
+// .flex-center-item .home-right {
+//  // flex-grow: 1;
+//  width: 15%;
+//  margin: 0px 0px 0px 10px;
+//  // border-left: 1px inset;
+//  text-align: justify;
+// }
