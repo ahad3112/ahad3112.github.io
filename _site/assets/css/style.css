@@ -801,7 +801,6 @@ html, .my-body, .flex-container {
 
 .flex-container .flex-header-item {
   width: 96%;
-  flex-basis: 60px;
   flex: 0 0 auto;
   background-color: green; }
 
@@ -825,10 +824,37 @@ html, .my-body, .flex-container {
   align-items: center; }
 
 .flex-header-item .flex-header-item-nav {
-  margin: 0px 20px 0px 0px; }
+  margin: 0px 20px 0px 0px;
+  font-size: 20px; }
 
 .flex-header-item .flex-header-item-title {
   margin: 0px 0px 0px 20px; }
+
+/* ======================= Home ======================= */
+.home-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.home-main .home-left {
+  flex: 0 0 250px;
+  margin: 0px 10px 0px 20px;
+  text-align: justify; }
+
+.home-main .home-center {
+  flex: 1 0 auto;
+  margin: 0px 10px 0px 10px; }
+
+.home-main .home-center .home-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.home-main .home-right {
+  flex: 0 0 250px;
+  margin: 0px 20px 0px 10px;
+  text-align: justify; }
 
 /* ==================== about-content ==================== */
 .about-content {
