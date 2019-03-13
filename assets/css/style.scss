@@ -31,6 +31,7 @@ html, .my-body, .flex-container{
   // flex-basis: 60px;
   flex: 0 0 auto;
   background-color: green;
+  // position: fixed;
 }
 
 .flex-container .flex-center-item {
@@ -38,7 +39,7 @@ html, .my-body, .flex-container{
   flex: 1 0 auto;
   background-color: darkgray;
   // overflow-y: auto;
-  margin: 10px 0px 10px 0px;
+  margin: 50px 0px 10px 0px;
   // padding: 10px 10px 10px 10px;
   // position: relative;
 }
@@ -56,7 +57,7 @@ html, .my-body, .flex-container{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // position: fixed;
+  position: fixed;
 }
 
 

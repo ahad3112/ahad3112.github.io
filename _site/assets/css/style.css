@@ -808,7 +808,7 @@ html, .my-body, .flex-container {
   width: 96%;
   flex: 1 0 auto;
   background-color: darkgray;
-  margin: 10px 0px 10px 0px; }
+  margin: 50px 0px 10px 0px; }
 
 .flex-container .flex-footer-item {
   fflex: 0 0 auto;
@@ -821,7 +821,8 @@ html, .my-body, .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: fixed; }
 
 .flex-header-item .flex-header-item-nav {
   margin: 0px 20px 0px 0px;
