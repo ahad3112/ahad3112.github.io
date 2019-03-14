@@ -31,32 +31,38 @@
 
   <!-- ==================== Body ==================== -->
   <body class="my-body">
-    <div class="flex-container">
-      <!-- ==================== Header ==================== -->
-      <div class="flex-header-item">
 
-        <div class="flex-header-item-title">
+    <!-- ==================== Flex Container ==================== -->
+    <div class="my-page-container">
+      <!-- ==================== Header ==================== -->
+      <div class="my-page-header">
+        <div class="my-page-header-title">
           <h1><a href="{{site.url}}">{{ page.title }}</a></h1>
         </div>
-
-        <div class="flex-header-item-nav">
-          <nav>
-            <a href="{{site.url}}/index.html">Home</a>&nbsp;&nbsp;
-            <a href="">Blogs</a>&nbsp;&nbsp;
-            <a href="">Projects</a>&nbsp;&nbsp;
-            <a href="{{site.url}}/contact.html">Contact</a>
-          </nav>
+        <div class="my-page-header-nav">
+            <a href="{{site.url}}/index.html">HOME</a>&nbsp;&nbsp;
+            <a href="">BLOGS</a>&nbsp;&nbsp;
+            <a href="">PROJECTS</a>&nbsp;&nbsp;
+            <a href="{{site.url}}/contact.html">CONTACT</a>
+            <!-- <div class="my-page-header-search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div> -->
         </div>
+      </div>
 
+      <!-- ==================== Content ==================== -->
+      <div class="my-page-content">
+          {{ content}}
       </div>
-      <!-- ==================== Center ==================== -->
-      <div class="flex-center-item">
-        {{ content }}
-      </div>
+
       <!-- ==================== Footer ==================== -->
-      <div class="flex-footer-item">
+      <div class="my-page-footer">
         &copy; 2019 <a href="{{site.authorurl}}">{{site.author}}</a>. Hosted by <a href="{{site.url}}">Github</a>.
       </div>
     </div>
+
   </body>
 </html>

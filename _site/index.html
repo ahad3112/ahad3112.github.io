@@ -45,28 +45,43 @@
 
   <!-- ==================== Body ==================== -->
   <body class="my-body">
-    <div class="flex-container">
-      <!-- ==================== Header ==================== -->
-      <div class="flex-header-item">
 
-        <div class="flex-header-item-title">
+    <!-- ==================== Flex Container ==================== -->
+    <div class="my-page-container">
+      <!-- ==================== Header ==================== -->
+      <div class="my-page-header">
+        <div class="my-page-header-title">
           <h1><a href="http://localhost:4000">Muhammed Abdullah Al Ahad</a></h1>
         </div>
-
-        <div class="flex-header-item-nav">
-          <nav>
-            <a href="http://localhost:4000/index.html">Home</a>&nbsp;&nbsp;
-            <a href="">Blogs</a>&nbsp;&nbsp;
-            <a href="">Projects</a>&nbsp;&nbsp;
-            <a href="http://localhost:4000/contact.html">Contact</a>
-          </nav>
+        <div class="my-page-header-nav">
+            <a href="http://localhost:4000/index.html">HOME</a>&nbsp;&nbsp;
+            <a href="">BLOGS</a>&nbsp;&nbsp;
+            <a href="">PROJECTS</a>&nbsp;&nbsp;
+            <a href="http://localhost:4000/contact.html">CONTACT</a>
+            <!-- <div class="my-page-header-search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div> -->
         </div>
-
       </div>
-      <!-- ==================== Center ==================== -->
-      <div class="flex-center-item">
-        <!-- ==================== content ==================== -->
-<main class="home-main">
+
+      <!-- ==================== Content ==================== -->
+      <div class="my-page-content">
+          <!-- ==================== content ==================== -->
+<main class="my-home">
+  <div class="my-home-left">
+    LEFT
+  </div>
+  <div class="my-home-right">
+    RIGHT
+  </div>
+</main>
+
+
+
+<!-- <main class="home-main">
   <div class="home-left">
     <article class="home-about-me">
       This is about Muhammed Abdullah Al Ahad
@@ -82,13 +97,15 @@
       This will show the latest news about what have I done or what is going on right now.
     </article>
   </div>
-</main>
+</main> -->
 
       </div>
+
       <!-- ==================== Footer ==================== -->
-      <div class="flex-footer-item">
+      <div class="my-page-footer">
         &copy; 2019 <a href="https://github.com/ahad3112/">Muhammed Abdullah Al Ahad</a>. Hosted by <a href="http://localhost:4000">Github</a>.
       </div>
     </div>
+
   </body>
 </html>
