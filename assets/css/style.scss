@@ -29,39 +29,52 @@ html, .my-body, .flex-container{
 /* ==================== My page Header ==================== */
 .my-page-container .my-page-header {
   width: 100%;
-  background-color: green;
+  background-color: #1B2631;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   // align-items: center;
-  flex: 0 0 80px;
+  flex: 0 0 70px;
   // margin: 0px 0px 10px 0px;
+  // position: fixed;
 }
 .my-page-container .my-page-header .my-page-header-title{
   flex: 0 0 40px;
-  text-align: center;
+  // text-align: center;
+  align-self: center;
 }
 
 .my-page-container .my-page-header .my-page-header-nav{
   display: flex;
   flex-direction: row;
-  flex: 0 0 40px;
+  flex: 0 0 30px;
   justify-content: space-around;
-  align-items: center;
-  background-color: #4A145A;
+  align-items: stretch;
+  background-color: #5F6A6A;
+}
+.my-page-container .my-page-header .my-page-header-nav > a {
+  align-self: center;
+  // border-left: 1px solid green;
+  // border-right: 1px solid green;
+}
+.my-page-container .my-page-header .my-page-header-nav > a:hover {
+  background-color: #FA8072;
+  // padding: 0px 5px 0px 5px;
 }
 /* ==================== My page Content ==================== */
 .my-page-container .my-page-content {
-  width: 96%;
-  background-color: red;
+  width: 100%;
+  background-color: #E5E7E9;
 }
 
 
 /* ==================== My page Footer ==================== */
 .my-page-container .my-page-footer {
   width: 100%;
-  background-color: green;
+  background-color: #1B2631;
+  text-align: center;
 }
+
 
 
 /* ==================== Flex Container ==================== */
